@@ -40,7 +40,7 @@ $(document).ready(ev => {
                 article2.innerText = "Humidity:"+" "+humid;
                 article3.innerText = "Wind Speed:"+" "+windSpd+" "+"kph";
                 article.innerText = TempInCel;
-                section.style.borderColor = color;                
+                // section.style.borderColor = color;                
                 $(`#mainBox`).prepend(section);  
                 // $(`section`).css({ "background": "blue" });
         

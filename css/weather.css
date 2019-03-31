@@ -46,11 +46,11 @@ html, body {
     background-size: 100%;
     width: 100vw;
     height: 100vh;
-    -webkit-animation: slide 100s linear infinite;
+    animation: slide 1000s linear infinite;
   }
   @-webkit-keyframes slide {
       from { background-position: 0 0; }
-      to { background-position: -400px 0; }
+      to { background-position: -4000px 0; }
   }
 #mainBox{
     position: absolute;
@@ -61,13 +61,14 @@ html, body {
     flex-wrap: wrap;
 }
 section{
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    border: 2px solid ;
+    border: 2px solid rgb(109, 104, 104);
     border-radius: 5px;
     margin: 1vw;
     height:21em;
     width: 13.8vw;
+    color: white;
 }
 i{
   position: relative;
@@ -77,6 +78,8 @@ i{
 h1{
     text-align: center;
     font-size: 2em;
+    color: black;
+    
 }
 article{
 
@@ -92,6 +95,7 @@ position:relative;
 
 }
 article:last-of-type{
+    color: aquamarine;
     margin-top:1em;
     font-size: 2em;
 }
