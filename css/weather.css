@@ -1,0 +1,97 @@
+html, body {
+    margin: 0; padding: 0;
+  }
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.ask{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.input,
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 0;
+
+}
+
+.input {
+    border: 1px solid lightsalmon;
+}
+
+.button {
+    background-color: lightsalmon;
+    border: 1px solid transparent;
+    color: beige;
+}
+.button,.input:focus {
+    outline:none;
+}
+.button:hover{
+    cursor: pointer;
+}
+.bg{
+    box-sizing: border-box;
+    background: rgb(121, 164, 177) url(../imgs/Clouds-PNG-Pic.png) repeat 0 0;
+    background-position: center;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    -webkit-animation: slide 100s linear infinite;
+  }
+  @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -400px 0; }
+  }
+#mainBox{
+    position: absolute;
+    top: 20%;
+    left: 2.5em;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    background: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border: 2px solid ;
+    border-radius: 5px;
+    margin: 1vw;
+    height:21em;
+    width: 13.8vw;
+}
+i{
+  position: relative;
+  left: 35%;
+  margin-top: 0.25em;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+article{
+
+    text-align: center;
+}
+article:first-of-type{
+    margin-top: 0.5em;
+    font-size:1em;
+}
+article:last-of-type::after{   
+content: '\00b0 C';
+position:relative;
+
+}
+article:last-of-type{
+    margin-top:1em;
+    font-size: 2em;
+}
